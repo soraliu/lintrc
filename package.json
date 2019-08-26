@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "eslint:check": "eslint -c .eslintrc eslint-example.js",
-    "eslint:fix": "eslint -c .eslintrc eslint-example.js --fix"
+    "eslint:check": "eslint -c ./eslint/.eslintrc ./eslint/eslint-example.js",
+    "eslint:fix": "eslint -c ./eslint/.eslintrc ./eslint/eslint-example.js --fix",
+    "stylelint:check": "stylelint --config ./stylelint/.stylelintrc ./stylelint/stylelint-example.scss --fix --syntax scss"
   }
 }
