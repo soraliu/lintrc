@@ -1,0 +1,14 @@
+{
+  "name": "lintrc",
+  "version": "1.0.0",
+  "description": "eslint config",
+  "main": "index.js",
+  "repository": "git@github.com:lovesora/lintrc.git",
+  "author": "Sora Liu <475212506@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "eslint:check": "eslint -c .eslintrc eslint-example.js",
+    "eslint:fix": "eslint -c .eslintrc eslint-example.js --fix"
+  }
+}
