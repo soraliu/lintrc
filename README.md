@@ -1,0 +1,2 @@
+# lintrc
+lint config
