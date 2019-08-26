@@ -36,9 +36,50 @@
       "skipComments": true,
     }],
     "lines-around-comment": ["error", {
+      // 注释前必须有空行
       "beforeBlockComment": true,
       "beforeLineComment": true,
     }],
+    // 多行注释前必须有"*"
     "multiline-comment-style": ["error", "starred-block"],
+    // 单引号 '优于双引号"
+    "quotes": ["error", "single"],
+    // 对象属性声明的冒号:后，加空格
+    "key-spacing": ["error"],
+    // 控制逗号前后的空格
+    "comma-spacing": ["error", {
+        "before": false,
+        "after": true
+    }],
+    // 条件语句if、else、switch...后，加空格
+    "keyword-spacing": ["error", {
+        "before": true,
+        "after": true
+    }],
+    // 开始大括号前，加空格
+    "space-before-blocks": ["error", "always"],
+    // 禁止圆括号内的空格
+    "space-in-parens": ["error", "never"],
+    // 要求中缀操作符周围有空格
+    "space-infix-ops": ["error"],
+    // 强制在注释中 // 或 /* 使用一致的空格
+    "spaced-comment": ["error", "always"],
+    // 强制分号之前和之后使用一致的空格
+    "semi-spacing": ["error", {
+      "before": false,
+      "after": true,
+    }],
+    // 强制在 switch 的冒号左右有空格
+    "switch-colon-spacing": ["error", {
+      "after": true,
+      "before": false,
+    }],
+    // 要求箭头函数的箭头之前或之后有空格
+    "arrow-spacing": ["error", {
+        "before": true,
+        "after": true,
+    }],
+    // 要求箭头函数体使用大括号
+    "arrow-body-style": ["error", "as-needed"],
   }
 }
