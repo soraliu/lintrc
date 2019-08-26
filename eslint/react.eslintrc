@@ -1,6 +1,7 @@
 {
   "extends": "eslint:recommended",
   // ref: http://eslint.cn/docs/user-guide/configuring#specifying-parser-options
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": "2019",
     "sourceType": "module",
