@@ -1,2 +1,4 @@
 # lintrc
 lint config
+
+# Installation

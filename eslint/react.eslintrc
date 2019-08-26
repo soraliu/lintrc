@@ -1,5 +1,5 @@
 {
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "standard-react"],
   // ref: http://eslint.cn/docs/user-guide/configuring#specifying-parser-options
   "parser": "babel-eslint",
   "parserOptions": {
@@ -85,5 +85,9 @@
     }],
     // 要求箭头函数体使用大括号
     "arrow-body-style": ["error", "as-needed"],
+    // 禁用 console
+    "no-console": ["error", {
+      "allow": ["log", "warn"]
+    }],
   }
 }
