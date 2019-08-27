@@ -59,8 +59,10 @@
     }],
     // 开始大括号前，加空格
     "space-before-blocks": ["error", "always"],
-    // 禁止圆括号内的空格
-    "space-in-parens": ["error", "never"],
+    // 强制在花括号中使用一致的空格
+    "object-curly-spacing": ["error", "always"],
+    // 禁止在括号内使用空格
+    "array-bracket-spacing": ["error", "never"],
     // 要求中缀操作符周围有空格
     "space-infix-ops": ["error"],
     // 强制在注释中 // 或 /* 使用一致的空格
@@ -86,5 +88,11 @@
     "no-console": ["error", {
       "allow": ["log", "warn"]
     }],
-  }
+    // 禁用函数内没有yield的 generator 函数
+    "require-yield": 0,
+    // 禁用行尾空格
+    "no-trailing-spaces": "error",
+    // 禁止变量声明覆盖外层作用域的变量
+    "no-shadow": "error",
+  },
 }
