@@ -1,102 +1,11 @@
 {
-  "extends": ["eslint:recommended", "standard-react"],
-  // ref: http://eslint.cn/docs/user-guide/configuring#specifying-parser-options
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": "2019",
-    "sourceType": "module",
-  },
-  // ref: http://eslint.cn/docs/user-guide/configuring#specifying-environments
-  "env": {
-    // 浏览器环境中的全局变量
-    "browser": true,
-    // Node.js 全局变量和 Node.js 作用域。
-    "node": true,
-    // 启用除了 modules 以外的所有 ECMAScript 6 特性（该选项会自动设置 ecmaVersion 解析器选项为 6）。
-    "es6": true,
-  },
+  "extends": [".eslintrc", "standard-react"],
   // ref: http://eslint.cn/docs/rules/
   "rules": {
-    // 要求在语句末尾使用分号
-    "semi": ["error", "always"],
-    // 要求或禁止使用拖尾逗号
-    "comma-dangle": ["error", {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "always-multiline"
-    }],
-    "max-len": ["error", {
-      "code": 140,
-      "tabWidth": 2,
-    }],
-    "max-lines": ["error", {
-      "max": 400,
-      // 忽略只包含注释的行
-      "skipComments": true,
-    }],
-    "lines-around-comment": ["error", {
-      // 注释前必须有空行
-      "beforeBlockComment": true,
-      "beforeLineComment": true,
-    }],
-    // 多行注释前必须有"*"
-    "multiline-comment-style": ["error", "starred-block"],
-    // 单引号 '优于双引号"
-    "quotes": ["error", "single"],
+    // jsx中使用双引号
     "jsx-quotes": ["error", "prefer-double"],
-    // 对象属性声明的冒号:后，加空格
-    "key-spacing": ["error"],
-    // 控制逗号前后的空格
-    "comma-spacing": ["error", {
-        "before": false,
-        "after": true
-    }],
-    // 条件语句if、else、switch...后，加空格
-    "keyword-spacing": ["error", {
-        "before": true,
-        "after": true
-    }],
-    // 开始大括号前，加空格
-    "space-before-blocks": ["error", "always"],
-    // 强制在花括号中使用一致的空格
-    "object-curly-spacing": ["error", "always"],
-    // 禁止在括号内使用空格
-    "array-bracket-spacing": ["error", "never"],
-    // 要求中缀操作符周围有空格
-    "space-infix-ops": ["error"],
-    // 强制在注释中 // 或 /* 使用一致的空格
-    "spaced-comment": ["error", "always"],
-    // 强制分号之前和之后使用一致的空格
-    "semi-spacing": ["error", {
-      "before": false,
-      "after": true,
-    }],
-    // 强制在 switch 的冒号左右有空格
-    "switch-colon-spacing": ["error", {
-      "after": true,
-      "before": false,
-    }],
-    // 要求箭头函数的箭头之前或之后有空格
-    "arrow-spacing": ["error", {
-        "before": true,
-        "after": true,
-    }],
-    // 要求箭头函数体使用大括号
-    "arrow-body-style": ["error", "as-needed"],
-    // 禁用 console
-    "no-console": ["error", {
-      "allow": ["log", "warn"]
-    }],
     // 禁用必须导入React
     "react/react-in-jsx-scope": 0,
-    // 禁用函数内没有yield的 generator 函数
-    "require-yield": 0,
-    // 禁用行尾空格
-    "no-trailing-spaces": "error",
-    // 禁止变量声明覆盖外层作用域的变量
-    "no-shadow": "error",
   },
   "settings": {
     "react": {

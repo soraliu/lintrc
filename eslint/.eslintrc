@@ -14,6 +14,8 @@
     "node": true,
     // 启用除了 modules 以外的所有 ECMAScript 6 特性（该选项会自动设置 ecmaVersion 解析器选项为 6）。
     "es6": true,
+    // Jest 全局变量
+    "jest": true,
   },
   // ref: http://eslint.cn/docs/rules/
   "rules": {
