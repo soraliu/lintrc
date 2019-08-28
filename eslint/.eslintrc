@@ -41,10 +41,17 @@
     "lines-around-comment": ["error", {
       // 注释前必须有空行
       "beforeBlockComment": true,
-      "beforeLineComment": true,
+      "beforeLineComment": false,
+      "allowBlockStart": true,
+      "allowObjectStart": true,
+      "allowArrayStart": true,
+      "allowClassStart": true,
     }],
     // 多行注释前必须有"*"
-    "multiline-comment-style": ["error", "starred-block"],
+    // "multiline-comment-style": ["error", "starred-block"],
+    "multiline-comment-style": 0,
+    // 强制在注释中 // 或 /* 使用一致的空格
+    "spaced-comment": ["error", "always"],
     // 单引号 '优于双引号"
     "quotes": ["error", "single"],
     // 对象属性声明的冒号:后，加空格
@@ -67,8 +74,6 @@
     "array-bracket-spacing": ["error", "never"],
     // 要求中缀操作符周围有空格
     "space-infix-ops": ["error"],
-    // 强制在注释中 // 或 /* 使用一致的空格
-    "spaced-comment": ["error", "always"],
     // 强制分号之前和之后使用一致的空格
     "semi-spacing": ["error", {
       "before": false,
@@ -96,5 +101,14 @@
     "no-trailing-spaces": "error",
     // 禁止变量声明覆盖外层作用域的变量
     "no-shadow": "error",
+    // 不允许多个空行
+    "no-multiple-empty-lines": ["error", {
+      "max": 3,
+      "maxEOF": 0,
+      "maxBOF": 0,
+    }],
+    "no-empty-function": 0,
+    "template-curly-spacing": 0,
+    "indent": 0,
   },
 }
